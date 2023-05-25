@@ -1,0 +1,43 @@
+/* Format indicator color */
+.indicator { 
+  background: #00000058 
+  !important; 
+}
+
+/* Format indicators to cover full poster */
+.cardIndicators, .listItemIndicators {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Darken and blur poster */
+.playedIndicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+  align-items: center;
+}
+
+/* Add and format watched text before checkmark */
+.playedIndicator::before {
+  content: "Watched";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Remove checkmark */
+.playedIndicator .material-icons.indicatorIcon.check {
+  display: none; 
+}
+
+/* Format episode counter to top right of poster */
+.countIndicator {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
